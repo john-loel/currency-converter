@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert currencies using exchange-rate data.">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">My Portfolio</a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="index.html#project">About Project</a>
+                
+<link rel="stylesheet" href="styles.css">
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="converter-section">
+        <div class="converter-card">
+            <a class="back-link" href="index.html">&larr; Back to Portfolio</a>
+
+            <p class="eyebrow">SIMPLE AND EASY TO USE</p>
+            <h1>Currency Converter</h1>
+            <p class="subtitle">
+                Convert currencies using exchange-rate data from Frankfurter.
+            </p>
+
+            <form id="converter-form">
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input
+                        type="number"
+                        id="amount"
+                        name="amount"
+                        min="0.000001"
+                        step="any"
+                        value="100"
+                        placeholder="Enter amount"
+                        required
+                    >
+                </div>
+
+                <div class="currency-row">
+                    <div class="form-group">
+                        <label for="from-currency">From</label>
+                        <select id="from-currency" name="from-currency" required>
+                            <option value="USD">USD - US Dollar</option>
+                        </select>
+                    </div>
+
+                    <button
+                        type="button"
+                        id="swap-button"
+                        class="swap-button"
+                        aria-label="Swap currencies"
+                        title="Swap currencies"
+                    >&#8646;</button>
+
+                    <div class="form-group">
+                        <label for="to-currency">To</label>
+                        <select id="to-currency" name="to-currency" required>
+                            <option value="PHP">PHP - Philippine Peso</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" id="convert-button" class="button convert-button">
+                    Convert Currency
+                </button>
+            </form>
+
+            <p id="status-message" class="status-message" role="status"
+                aria-live="polite"></p>
+
+            <section id="result" class="result-box" aria-live="polite" hidden>
+                <p class="result-label">Converted Amount</p>
+                <h2 id="result-amount">--</h2>
+                <p id="exchange-rate"></p>
+                <p id="rate-date" class="rate-date"></p>
+            </section>
+
+            <p class="disclaimer">
+                Exchange rates are reference rates and may differ from rates
+                offered by banks or money-transfer services.
+            </p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Currency Converter Application</p>
+        </div>
+    </footer>
+</body>
+</html>
