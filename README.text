@@ -1,0 +1,68 @@
+
+CURRENCY CONVERTER APPLICATION
+==============================
+
+Project Type: Individual
+Student Name: John Loel E. Butlig
+Course/Section: IT 110 - CSIJ1
+
+PROJECT DESCRIPTION
+-------------------
+The Currency Converter Application is a web application that
+converts an amount from one currency to another using exchange-rate
+data retrieved from the Frankfurter public API.
+
+TECHNOLOGIES USED
+-----------------
+1. HTML5
+2. CSS3
+3. JavaScript
+4. Fetch API
+5. Frankfurter API
+
+API INFORMATION
+---------------
+API Name: Frankfurter API
+API Website: https://frankfurter.dev/
+API Documentation: https://frankfurter.dev/
+API Base URL: https://api.frankfurter.dev/v2
+API Key: Not required for public endpoints.
+
+PROJECT FILES
+-------------
+index.html - Portfolio homepage and project introduction
+app.html - Main currency converter interface
+styles.css - Website styling and responsive layout
+script.js - API integration and currency conversion logic
+README.txt - Project documentation
+
+HOW TO RUN THE APPLICATION
+--------------------------
+Option 1: Using Visual Studio Code
+
+1. Open the project folder in Visual Studio Code.
+2. Install the Live Server extension if necessary.
+3. Right-click index.html.
+4. Select "Open with Live Server".
+5. Click the Currency Converter link on the homepage.
+6. Enter an amount and select the currencies.
+7. Click "Convert Currency".
+
+Option 2: Using Python
+
+1. Open a terminal inside the project folder.
+2. Run: python -m http.server 8000
+3. Open http://localhost:8000 in your browser.
+4. Open index.html and click the converter link.
+
+IMPORTANT NOTES
+---------------
+An internet connection is required to retrieve currency data.
+The application uses reference exchange rates, which may differ
+from bank or money-transfer service rates.
+The rates are not guaranteed to be real-time trading rates.
+
+ERROR HANDLING
+--------------
+The application validates the amount entered and displays a
+message when an API request fails or data cannot be retrieved.
